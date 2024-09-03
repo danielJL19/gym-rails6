@@ -1,0 +1,6 @@
+-----------LOGIN Y REGISTRO DE USUARIOS --------------
+1- se puede logear sesion como usuario
+2- si esta logeado, y quiere volver a login, lo redirige al dashboard
+3- el usuario puede salir de sesion
+
+1- el admin puede registrar nuevos usuarios 

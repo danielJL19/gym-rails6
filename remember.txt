@@ -1,0 +1,4 @@
+las sesiones son datos almacenados en una cookie, su función es tener persistencia
+
+http://railscasts.com/episodes/250-authentication-from-scratch-revised?autoplay=true
+https://www.honeybadger.io/blog/rails-user-authentication-from-scratch/

@@ -1,0 +1,87 @@
+1. Requerimientos Funcionales
+Para Usuarios:
+
+    Registro de Usuario:
+        Formulario de registro con campos como nombre completo, correo electrónico, contraseña, número de teléfono, y posiblemente dirección.
+        Validación de datos (por ejemplo, formato de correo electrónico, longitud de la contraseña).
+        Confirmación de registro a través de un enlace enviado por correo electrónico.
+
+    Inicio de Sesión:
+        Autenticación mediante correo electrónico y contraseña.
+        Opción de “Recordar mi sesión” para mantener la sesión activa en dispositivos confiables.
+        Recuperación de contraseña a través de correo electrónico.
+
+    Perfil del Usuario:
+        Visualización y edición de datos personales.
+        Consulta de historial de pagos y membresías.
+        Gestión de preferencias (por ejemplo, notificaciones por correo electrónico).
+
+    Programación de Clases:
+        Consulta del horario de clases disponibles.
+        Inscripción y cancelación de clases.
+        Notificaciones de recordatorio para las clases.
+
+    Gestión de Membresías:
+        Visualización del estado de la membresía (activa, vencida, etc.).
+        Renovación de membresía.
+        Acceso a los beneficios asociados a la membresía.
+
+Para Administradores:
+
+    Registro e Inicio de Sesión de Administrador:
+        Formulario de registro e inicio de sesión separado del usuario.
+        Control de acceso basado en roles (solo administradores pueden acceder a ciertas funciones).
+
+    Gestión de Usuarios:
+        Visualización, edición y eliminación de perfiles de usuarios.
+        Consulta de historial de actividad y pagos de los usuarios.
+
+    Gestión de Clases y Horarios:
+        Creación, edición y eliminación de clases.
+        Gestión de horarios y recursos (por ejemplo, instructores y salas).
+
+    Gestión de Membresías:
+        Creación y edición de planes de membresía.
+        Visualización de estadísticas de membresías (nuevas, renovaciones, cancelaciones).
+
+    Reportes y Estadísticas:
+        Generación de reportes financieros (ingresos por membresías, pagos, etc.).
+        Estadísticas sobre la asistencia a clases y la actividad de los usuarios.
+
+    Configuración del Sistema:
+        Configuración de parámetros generales del sistema (por ejemplo, tarifas de membresía, política de cancelación).
+        Gestión de configuraciones de la pasarela de pagos.
+
+2. Requerimientos No Funcionales
+
+    Seguridad:
+        Implementación de medidas de seguridad como cifrado de contraseñas, HTTPS, y autenticación segura.
+        Protección contra ataques comunes como SQL Injection y Cross-Site Scripting (XSS).
+
+    Usabilidad:
+        Interfaz de usuario intuitiva y fácil de usar.
+        Soporte para múltiples dispositivos (PC, tabletas, móviles).
+
+    Escalabilidad:
+        El sistema debe ser capaz de manejar un número creciente de usuarios y datos sin degradar el rendimiento.
+
+    Disponibilidad y Mantenimiento:
+        Estrategias para asegurar la disponibilidad continua del sistema (por ejemplo, copias de seguridad regulares).
+        Plan de mantenimiento y actualizaciones periódicas.
+
+3. Requerimientos de Pasarela de Pagos
+
+    Integración con Pasarela de Pagos:
+        Selección de una pasarela de pagos compatible (como Stripe, PayPal, etc.).
+        Implementación de API para realizar transacciones.
+
+    Proceso de Pago:
+        Interfaz de pago segura y sencilla.
+        Confirmación de pago y envío de recibos por correo electrónico.
+
+    Gestión de Transacciones:
+        Visualización y gestión de transacciones realizadas (historial de pagos).
+        Manejo de reembolsos y disputas.
+
+    Cumplimiento Normativo:
+        Asegurarse de que el sistema cumple con las normativas de protección de datos (por ejemplo, GDPR).

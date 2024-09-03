@@ -1,0 +1,16 @@
+<% content_for(:title, 'Registrarse') %>
+<h1>Iniciar Sesión</h1>
+<div class="my-3">  
+  <%= form_with url: '/users/sign_in', method: :post do |form| %>
+    <div class="mb-3">
+      <%= form.label :email %>
+      <%= form.email_field :email %>
+    </div>
+
+    <div class="mb-3">
+      <%= form.label :password %>
+      <%= form.password_field :password %>
+    </div>
+    <%= form.submit %>
+  <% end %>
+</div>
