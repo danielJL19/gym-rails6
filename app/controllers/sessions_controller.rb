@@ -12,7 +12,7 @@ class SessionsController < ApplicationController
       # 2- Verifica la contraseña
       if @user.authenticate(params['password'])
         session[:current_user] = @user.id
-        redirect_to root_path, notice: "Te haz logeado exitosamente"
+        redirect_to client_memberships_path, notice: "Te haz logeado exitosamente"
       else 
         flash[:alert] = "Password incorrecto"
         render :new, status: :unprocessable_entity
