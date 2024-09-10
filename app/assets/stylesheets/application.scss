@@ -18,4 +18,11 @@
 @import "bootstrap/scss/bootstrap";
 @import "config/fonts";
 
+// or only core styles
+@import '@splidejs/splide/dist/css/splide-core.min';
+@import '@splidejs/splide/dist/css/themes/splide-default.min';
+
+.splide_container {
+  color:black;
+}
 

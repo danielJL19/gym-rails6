@@ -1,2 +1,138 @@
-<h1>Pages#index</h1>
-<p>Find me in app/views/pages/index.html.erb</p>
+<section class="splide" aria-label="Splide Basic HTML Example">
+  <div class="splide__track">
+		<ul class="splide__list">
+			<li class="splide__slide"> <%= image_tag('gym1.jpg', class:'splide_container') %> </li>
+		</ul>
+  </div>
+</section>
+
+<script>
+  document.addEventListener( 'DOMContentLoaded', function() {
+    var splide = new Splide( '.splide', {
+			height: '30rem',
+			cover: true,
+		});
+    splide.mount();
+  } );
+</script>
+
+
+<!-- Clases y Horarios -->
+<section id="clases" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Clases Disponibles</h2>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card h-100">
+                    <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Cardio">
+                    <div class="card-body">
+                        <h5 class="card-title">Cardio</h5>
+                        <p class="card-text">Mejora tu resistencia y quema calorías con nuestras intensas clases de cardio.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card h-100">
+                    <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Yoga">
+                    <div class="card-body">
+                        <h5 class="card-title">Yoga</h5>
+                        <p class="card-text">Encuentra el equilibrio entre cuerpo y mente con nuestras clases de yoga.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card h-100">
+                    <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Pesas">
+                    <div class="card-body">
+                        <h5 class="card-title">Entrenamiento de Pesas</h5>
+                        <p class="card-text">Fortalece tus músculos con nuestras sesiones de levantamiento de pesas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="entrenadores" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5">Nuestros Entrenadores</h2>
+        <div class="row text-center">
+            <div class="col-lg-4">
+                <div class="feature-icon text-primary mb-3">
+                    <i class="bi bi-person-fill"></i>
+                </div>
+                <h5>Juan Pérez</h5>
+                <p>Especialista en entrenamiento funcional.</p>
+            </div>
+            <div class="col-lg-4">
+                <div class="feature-icon text-primary mb-3">
+                    <i class="bi bi-person-fill"></i>
+                </div>
+                <h5>María González</h5>
+                <p>Entrenadora de yoga y bienestar.</p>
+            </div>
+            <div class="col-lg-4">
+                <div class="feature-icon text-primary mb-3">
+                    <i class="bi bi-person-fill"></i>
+                </div>
+                <h5>Carlos López</h5>
+                <p>Especialista en levantamiento de pesas y crossfit.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="membresias" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Nuestras Membresías</h2>
+        <div class="row text-center">
+            <div class="col-lg-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Básico</h5>
+                        <p class="card-text">Acceso a las áreas comunes del gimnasio y clases grupales.</p>
+                        <h3>$30/mes</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Premium</h5>
+                        <p class="card-text">Acceso completo al gimnasio y todas las clases, además de 9 sesiones mensuales con un entrenador personal.</p>
+                        <h3>$50/mes</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">VIP</h5>
+                        <p class="card-text">Acceso completo, entrenador personal y nutricionista incluido.</p>
+                        <h3>$80/mes</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="testimonials">
+    <div class="container">
+        <h2 class="text-center mb-5">Lo que dicen nuestros clientes</h2>
+        <div class="row">
+            <div class="col-lg-6">
+                <blockquote class="blockquote">
+                    <p>"FitLife cambió mi vida. Ahora me siento más saludable y con más energía."</p>
+                    <footer class="blockquote-footer">Ana Martínez</footer>
+                </blockquote>
+            </div>
+            <div class="col-lg-6">
+                <blockquote class="blockquote">
+                    <p>"Un gimnasio con instalaciones increíbles y entrenadores muy profesionales."</p>
+                    <footer class="blockquote-footer">Pedro García</footer>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+</section>

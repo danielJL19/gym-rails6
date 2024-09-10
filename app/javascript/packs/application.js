@@ -14,3 +14,7 @@ import "@popperjs/core";
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
+
+import Splide from '@splidejs/splide';
+window.Splide = Splide;
+require('bootstrap-icons/font/bootstrap-icons.css');
